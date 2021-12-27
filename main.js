@@ -19,6 +19,11 @@ local_camera_client.on({
     
     local_camera_client.connect(CAMERA_IP, CAMERA_PORT);
     console.log(`The camera client has been started and connected himself to the camera using the ip ${CAMERA_IP} on the port ${CAMERA_PORT}`);
+    for (camera_datas.received != ``) {
+        
+        local_camera_client.send();
+        
+    };
     
 });
 

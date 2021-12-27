@@ -18,6 +18,7 @@ var WEB_SERVER_PORT = 80;
 local_camera_client.on({
     
     local_camera_client.connect(CAMERA_IP, CAMERA_PORT);
+    console.log(`The camera client has been started and connected himself to the camera using the ip ${CAMERA_IP} on the port ${CAMERA_PORT}`);
     
 });
 

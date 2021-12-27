@@ -24,5 +24,6 @@ local_camera_client.on({
 local_web_server.on({
     
     local_web_server.listen(WEB_SERVER_PORT);
+    console.log(`The camera bruteforcer web server is running on the port ${WEB_SERVER_PORT} and is ready to receive a client !`);
     
 });
